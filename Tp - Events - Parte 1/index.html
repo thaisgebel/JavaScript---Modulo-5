@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--Ejercicio 1: Manejar Evento para Mostrar un Mensaje: Selecciona un botón con el id "show-message" y agrega un evento click que muestre un mensaje de alerta diciendo "¡Hola, mundo!".-->
+
+<button id="show-message"></button>
+
+<hr>
+    
+<!--Ejercicio 2: Cambiar el Color de Fondo al Hacer Clic: Selecciona el body y agrega un evento que cambie su color de fondo al color que prefieras.-->
+
+<button class="change-color"></button>
+
+<hr>
+
+<!--Ejercicio 3: Cambiar Texto al Hacer Clic: Selecciona un párrafo con la clase "click-text" y agrega un evento que cambie su texto a "Has hecho clic aquí".-->
+
+<p class="click-text">No hagas click aca.</p>
+
+<hr>
+
+<!--Ejercicio 4: Cambiar el Valor de un Input al Cambiarlo: Selecciona un input de texto y crea un elemento párrafo el cual agreguemos lo que vamos escribiendo en el input.-->
+
+<input type="text">
+
+<p class="input-text"></p>
+
+<hr>
+<!--Ejercicio 5: Validar Formulario al Enviarlo: Selecciona un formulario con el id "signup-form"que tenga 2 inputs y agrega un evento que al enviar el formulario valide si los campos están completos. Si no lo están, muestra un mensaje de error.-->
+
+<form>
+    <input class="input-form" type="text" placeholder="Nombre"> 
+    <input class="input-form1" type="text" placeholder="Edad"> 
+    <input type="submit"  class="submit-form" value="Enviar formulario">
+</form>
+
+<hr>
+
+<!--Ejercicio 7: Agregar Elemento a la Lista al Hacer Clic: Selecciona un botón con el id "add-item" y agrega un evento que añada un nuevo elemento li a una lista con la clase "item-list".-->
+
+<ul class="list"></ul>
+<button class="list-button"></button>
+
+<hr>
+
+<!--Ejercicio 8: Prevenir el Comportamiento por Defecto al Enviar Formulario: Selecciona un formulario con el id "contact-form" y agrega unos eventos para evitar que el formulario se envíe, y luego muestra un mensaje diciendo "El envío del formulario ha sido detenido".-->
+
+<form class="contact-form">
+    <input class="input-form_p8" type="text" placeholder="Pipistrello Maledetto">
+    <input type="submit" value="Enviar formulario">
+</form>
+
+<hr>
+
+<!--Ejercicio 9: Contar y Mostrar Clics en un Botón: Selecciona un botón con la clase "count-button" y agrega un evento que cuente cuántas veces se ha hecho clic en él, mostrando el total en un span con el id "click-count".-->
+
+<button class="count-button">SPAMEA</button>
+<span class="click-count"></span>
+
+<hr>
+
+<!--Ejercicio 10: Validar Email en un Formulario: Selecciona un formulario con el id "email-form" y agrega un evento que valide que el campo de email contiene un formato válido antes de enviarlo-->
+
+<form id="email-form">
+    <input class="input-mail" type="email" placeholder="Ingresa tu mail">
+    <input class="submit-mail" type="submit">
+</form>
+
+<hr>
+
+<!--Ejercicio 11: Evento para Mostrar/Ocultar Contenido: Selecciona un botón con el id "toggle-content" y un div con la clase "content-box", y agrega un evento que muestre o oculte el contenido del div al hacer clic.-->
+
+<button id="toggle-content">mostrar</button>
+
+    <div class="content-box">
+        <p>Hola!!!</p>
+    </div>
+
+<hr>    
+
+<!--Ejercicio 12: Prevenir el Comportamiento por Defecto en un Enlace: Selecciona un enlace con la clase "no-default" y agrega un evento para evitar que el enlace navegue a otra página, mostrando en su lugar un mensaje en consola.-->
+
+<a class="no-default" href="www.google.com"> Ir a google</a>
+
+<hr>
+
+<!--Ejercicio 13: Cambiar el Estilo de un Elemento: Selecciona un botón con el id "add-class" y un párrafo con la clase "text". Agrega un evento que añada una clase "highlight" al párrafo y que cambie su estilo (A lo que gustes).-->
+
+<button id="add-class"></button>
+
+<p class="text">POR DIOS EL BOTON NOOOOO!!!!</p>
+
+<style>
+    .highlight {
+        background-color: black;
+        color: #7fffd4;
+    }
+</style>
+
+<hr>
+
+<!--Ejercicio 14: Alternar Contenido de Texto: Selecciona un botón con el id "toggle-text" y un párrafo con la clase "text-toggle". Agrega un evento que cambie el texto del párrafo entre "Texto 1" y "Texto 2".-->
+
+<button id="toggle-text"></button>
+
+<p class="text-toggle"> Mejunje de vaca </p>
+<p class="text-toggle1"> Mejunje de mama </p>
+
+<hr>
+
+<!--Ejercicio 15: Agregar Contenido HTML Dinámicamente: Selecciona un botón con el id "add-html" y un div con la clase "container". Agrega un evento click que inserte un bloque de HTML dentro del div.-->
+
+<button id="add-html"></button>
+<div class="container">
+
+</div>
+
+
+<div class="new-div">
+  <h1>La presentacion...</h1>
+  <p>Hola soy Ricardo</p>
+  <p>Hola soy Raul</p>
+</div>
+
+<hr>
+
+<!--Ejercicio 16: Crear y Agregar un Nuevo Elemento al DOM: Selecciona un botón con el id "create-element". Agrega un evento que cree un nuevo párrafo p con el texto "Elemento creado" y lo añada al final de un div con la clase "content".-->
+
+<button id="create-element"></button>
+
+<div class="content">
+
+</div>
+
+<hr>
+
+<!--Ejercicio 17: Cambiar el Color de Fondo de Múltiples Elementos: Selecciona todos los elementos li dentro de una lista con la clase "color-list" y un botón con el id "change-color". Agrega un evento que cambie el color de fondo de cada li.-->
+
+<button id="change-color"></button>
+
+<ul>
+    <li class="color-list"><p>HOWIS</p></li>
+    <li class="color-list"><p>HOWIS</p></li>
+    <li class="color-list"><p>HOWIS</p></li>
+    <li class="color-list"><p>HOWIS</p></li>
+</ul>
+ 
+<hr>
+
+<!--Ejercicio 18: Crear una Lista de Ítems Dinámicamente: Selecciona un botón con el id "create-list". Agrega un evento que cree una nueva lista ul y añada cinco elementos li dentro de ella, agregando la lista al final de un div con la clase "list-container".-->
+
+<button id="create-list"></button>
+
+<div class="list-container">
+
+</div>
+
+<hr>
+
+<!--Ejercicio 19: Cambiar el Tamaño de un elemento HTML: Selecciona un elemento con el id "resize-image" y agrega un evento que cambie su estilo.-->
+
+<img id="resize-image" src="IMG/image.png" alt="20px">
+
+</body>
+<script src="TpEventsParte1.js"></script>
+</html>
+
