@@ -177,20 +177,34 @@ buttonToggleText.addEventListener("click", function () {
 
 let buttonAddHtml = document.getElementById("add-html");
 let divContainer = document.querySelector(".container");
-let newDiv = document.querySelector(".new-div");
-
-newDiv.style.display = "none";
 
 buttonAddHtml.addEventListener("click", function () {
-  divContainer.classList.toggle("newDiv");
-  newDiv.style.display = "block";
-  if (divContainer.classList.contains("newDiv") === true) {
+  if (divContainer.classList.contains("newDiv")) {
+    let newDiv = createDiv();
     divContainer.append(newDiv);
-    newDiv.style.display = "block";
   } else {
-    newDiv.style.display = "none";
+    divContainer.childNodes.forEach(function (div) {
+      div.remove();
+    });
   }
+  divContainer.classList.toggle("newDiv");
 });
+
+function createDiv() {
+  let newDiv = document.createElement("div");
+  let h1NewDiv = document.createElement("h1");
+  let p1NewDiv = document.createElement("p");
+  let p2NewDiv = document.createElement("p");
+
+  h1NewDiv.textContent = "La presentacion...";
+  p1NewDiv.textContent = "Hola soy Ricardo";
+  p2NewDiv.textContent = "Hola soy Raul";
+
+  newDiv.append(h1NewDiv);
+  newDiv.append(p1NewDiv);
+  newDiv.append(p2NewDiv);
+  return newDiv;
+}
 
 /*Ejercicio 16: Crear y Agregar un Nuevo Elemento al DOM: Selecciona un botón con el id "create-element". Agrega un evento que cree un nuevo párrafo p con el texto "Elemento creado" y lo añada al final de un div con la clase "content".*/
 
